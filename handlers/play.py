@@ -97,7 +97,7 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
 @errors
 async def play(_, message: Message):
 
-    lel = await message.reply("🔄 **Processing** Sounds...")
+    lel = await message.reply("🔄 **Processing** @dihanrandila")
     sender_id = message.from_user.id
     sender_name = message.from_user.first_name
 
@@ -105,8 +105,8 @@ async def play(_, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        text="Channel",
-                        url="https://t.me/Infinity_BOTs")
+                        text="Owner",
+                        url="https://t.me/dihanrandila")
                    
                 ]
             ]
@@ -123,7 +123,7 @@ async def play(_, message: Message):
 
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/638c20c44ca418c8b2178.jpg"
+        thumb_name = "https://telegra.ph/file/5b07edcb7cf1b9824bfed.jpg"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
@@ -132,7 +132,7 @@ async def play(_, message: Message):
                     [
                         InlineKeyboardButton(
                             text="Channel",
-                            url=f"https://t.me/Infinity_Bots")
+                            url=f"https://t.me/dihanofficial")
 
                     ]
                 ]
@@ -168,7 +168,7 @@ async def play(_, message: Message):
                 )
         except Exception as e:
             title = "NaN"
-            thumb_name = "https://telegra.ph/file/638c20c44ca418c8b2178.jpg"
+            thumb_name = "https://telegra.ph/file/5b07edcb7cf1b9824bfed.jpg"
             duration = "NaN"
             views = "NaN"
             keyboard = InlineKeyboardMarkup(
@@ -185,7 +185,7 @@ async def play(_, message: Message):
         await generate_cover(requested_by, title, views, duration, thumbnail)     
         file_path = await converter.convert(youtube.download(url))
     else:
-        await lel.edit("🔎 **Finding** the song...")
+        await lel.edit("🔎 **Finding** Your song...")
         sender_id = message.from_user.id
         user_id = message.from_user.id
         sender_name = message.from_user.first_name
@@ -196,7 +196,7 @@ async def play(_, message: Message):
         for i in message.command[1:]:
             query += ' ' + str(i)
         print(query)
-        await lel.edit("🎵 **Processing** sounds...")
+        await lel.edit("🎵 **Processing**")
         ydl_opts = {"format": "bestaudio[ext=m4a]"}
         try:
             results = YoutubeSearch(query, max_results=1).to_dict()
