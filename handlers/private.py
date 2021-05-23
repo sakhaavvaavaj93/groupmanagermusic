@@ -30,6 +30,11 @@ Add me to your group and play music freely!**
                 ],[ 
                     InlineKeyboardButton(
                         "➕ Add To Your Group ➕", url="https://t.me/dihanmusicplayerbot?startgroup=true"
+                        
+                     ),
+                    InlineKeyboardButton(
+                         "𝗢𝘄𝗻𝗲𝗿", url="https://t.me/dihanrandila"
+                    )   
                     )]
             ]
         ),
