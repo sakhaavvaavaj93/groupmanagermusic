@@ -35,7 +35,7 @@ Add me to your group and play music freely!**
                     InlineKeyboardButton(
                          "𝗢𝘄𝗻𝗲𝗿", url="https://t.me/dihanrandila"
                     )   
-                    )]
+                ]    
             ]
         ),
      disable_web_page_preview=True
