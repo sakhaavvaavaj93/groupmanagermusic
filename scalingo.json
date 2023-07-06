@@ -1,0 +1,39 @@
+{
+  "name": "Music Bot",
+  "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
+  "keywords": ["music", "voicechat", "telegram"],
+  "repository": "https://github.com/sakhaavvaavaj93/groupmanagermusic",
+  "stack": "container",
+  "env": {
+    "SESSION_NAME": {"BQC3EeilsfEVo_WvO7XPwGeEZ0EZXk602f7XgKAnOUxqwEx-NASLkot__UPt48xXf0x12Fs9F1RvNGe3PfL7xcGzl3rjasfcyuLjaZlIkf2rURvY3QKrlNOaC5msYkw3sYLrG60HaPdZRu61XAzBR1K0WPxnAHt0fPjibPG071Wv_WuU0fq3g2v7cxY57aDUNXnZ_KyLSr3ZTpZg4mcSmOQKyE2W7LyYxTRnqr8n7CB62fMLp4cZublwLA5peazu_kWkxjECz63UdBOrKxATV3T9A7cKd-w135k_G5-zQX0DYtohreeFrt68_PsMl2Syi-VZIxe3sPx4VLV2t2waMSNkAAAAAW4qInAA",
+      "description": "Pyrogram session string",
+      "required": true
+    },
+    "BOT_TOKEN": {"6096333459:AAHqBLMM0GVKhcJ5WA6BAywL8ILvYcwy_PY",
+      "description": "A bot token from @BotFather",
+      "required": true
+    },
+    "BOT_NAME": {"Kalyani",
+      "description": "Your MusicPlayer Bot Name.",
+      "required": false,
+      "value": ""
+    },
+    "API_ID": {"1701859",
+      "description": "App ID from my.telegram.org/apps",
+      "required": true
+    },
+    "API_HASH": {"ebd582392a6d32290c7155925bee6d32",
+      "description": "App hash from my.telegram.org/apps",
+      "required": true
+    },
+    "SUDO_USERS": {
+      "description": "List of user IDs counted as admin everywhere (separated by space).",
+      "required": true
+    },
+    "DURATION_LIMIT": {
+      "description": "Max audio duration limit for downloads (minutes).",
+      "required": true,
+      "value": "10"
+    }
+  }
+}
